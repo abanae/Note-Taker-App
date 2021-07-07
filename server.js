@@ -18,11 +18,6 @@ app.get('/', (req, res) => {
 
 
 
-// const PORT = 
-// app.post('/', function(req, res) {
-//     res.send('Hello Sir')
-// })
-
 // Set up listener
 const PORT = process.env.PORT || 3001;
-app.listen(PORT, () => console.log(`listening on PORT 3001..`));
+app.listen(PORT, () => console.log(`listening on port ${PORT}..`));
