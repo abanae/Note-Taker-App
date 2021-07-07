@@ -1,5 +1,5 @@
 // Require Dependencies
-const express = require("express");
+const express = require('express');
 
 // Initializing App
 const app = express();
@@ -11,8 +11,7 @@ const app = express();
 
 // Define Route
 app.get('/', (req, res) => {
-    resp.send('Hello World!');
-
+    res.send('Hello World!');
 });
 
 
@@ -23,4 +22,4 @@ app.get('/', (req, res) => {
 // })
 
 // Set up listener
-app.listen(3000, () => console.log('listening on PORT 3000...'));
+app.listen(3000, () => console.log('listening on PORT 3000..'));
