@@ -1,10 +1,11 @@
+// Require Dependencies
 const fs = require("fs");
 const path = require('path');
 
 
 const router = require('express').Router();
 
-// Define Route
+// Defines Routes
 router.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '../public/index.html'));
 });
