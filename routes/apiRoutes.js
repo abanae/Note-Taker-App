@@ -28,14 +28,13 @@ router.post('/api/notes', (req, res) => {
 
 // API DELETE route deletes a note with specific ID
 router.delete('/api/notes/:id', (req, res) => {
-    let data = fs.readFileSync('db/db.json');  
-     data.splices(req.paramas.id, 1);
-     updateDb();
-     console.log('Deleted note' + req.params.id);
-     res.json(data);
-}); 
+    let data = JSON.parse(fs.readFileSync('db/db.json'));
+    let dataRemoved = data.filter(entry => entry.id !== req.params.id);
+    fs.writeFileSync('db/db.json',JSON.stringify(dataRemoved));
+    res.json(dataRemoved);
+});
 
-
+  
 
 
 module.exports = router;
