@@ -38,10 +38,6 @@
 
    - User Result should look like this:
 
-  |Main Page|Saved Notes|Delete Note
-|--|--|--
-|![Main Page](./assets/MainPage.png)|![Saved Notes](./assets/SaveNote.png)|![Delete Note](./assets//DeleteNote.png)
-
 
   ## Testing:
   1. Used 'Express.js' to build server
