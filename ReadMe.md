@@ -37,9 +37,9 @@
 
   5. Click on 🗑️ (trash bin) located on the right side of you note you desire to delete.
 
-   - User Result should look like this:
+    User Result should look like this:
 
-   - ![Note Taker](https://media.giphy.com/media/rmX1oPDtglBFEEweHd/giphy.gif)
+    ![Note Taker](https://media.giphy.com/media/rmX1oPDtglBFEEweHd/giphy.gif)
 
 
   ## Testing:
